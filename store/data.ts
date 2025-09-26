@@ -1,0 +1,133 @@
+type TyphoonData = {
+  time_iso: string;
+  lat: number;
+  lon: number;
+  max_wind_kph: number;
+  central_pressure_hpa: number;
+  movement_bearing_deg: number;
+  movement_kph: number;
+  category: string;
+  radius_34kt_km: number;
+  radius_50kt_km: number;
+  notes: string;
+};
+
+export const typhoonData: TyphoonData[] = [
+  {
+    time_iso: "2025-09-26T00:00:00+09:00",
+    lat: 29.8,
+    lon: 128.9,
+    max_wind_kph: 130,
+    central_pressure_hpa: 965,
+    movement_bearing_deg: 0o45,
+    movement_kph: 25,
+    category: "Typhoon (Category 2)",
+    radius_34kt_km: 280,
+    radius_50kt_km: 120,
+    notes: "Offshore, southwest of Kyushu. Compact eye forming.",
+  },
+  {
+    time_iso: "2025-09-26T03:00:00+09:00",
+    lat: 30.45,
+    lon: 129.4,
+    max_wind_kph: 140,
+    central_pressure_hpa: 955,
+    movement_bearing_deg: 0o45,
+    movement_kph: 28,
+    category: "Typhoon (Category 3)",
+    radius_34kt_km: 300,
+    radius_50kt_km: 140,
+    notes: "Intensifying, outer rainbands reach southern Kyushu.",
+  },
+  {
+    time_iso: "2025-09-26T06:00:00+09:00",
+    lat: 31.2,
+    lon: 129.95,
+    max_wind_kph: 150,
+    central_pressure_hpa: 940,
+    movement_bearing_deg: 0o40,
+    movement_kph: 30,
+    category: "Typhoon (Category 4)",
+    radius_34kt_km: 320,
+    radius_50kt_km: 160,
+    notes: "Strong core, gusts affecting south Kyushu coasts.",
+  },
+  {
+    time_iso: "2025-09-26T09:00:00+09:00",
+    lat: 31.9,
+    lon: 130.45,
+    max_wind_kph: 155,
+    central_pressure_hpa: 935,
+    movement_bearing_deg: 0o30,
+    movement_kph: 32,
+    category: "Typhoon (Category 4)",
+    radius_34kt_km: 340,
+    radius_50kt_km: 170,
+    notes: "Approaching western Kyushu; heavy rainbands over the sea.",
+  },
+  {
+    time_iso: "2025-09-26T12:00:00+09:00",
+    lat: 32.4,
+    lon: 130.7,
+    max_wind_kph: 150,
+    central_pressure_hpa: 938,
+    movement_bearing_deg: 0o25,
+    movement_kph: 30,
+    category: "Typhoon (Category 4)",
+    radius_34kt_km: 360,
+    radius_50kt_km: 180,
+    notes: "Outer eyewall near western transmission lines.",
+  },
+  {
+    time_iso: "2025-09-26T15:00:00+09:00",
+    lat: 32.65,
+    lon: 130.85,
+    max_wind_kph: 140,
+    central_pressure_hpa: 945,
+    movement_bearing_deg: 0o20,
+    movement_kph: 28,
+    category: "Severe Typhoon (Category 3)",
+    radius_34kt_km: 380,
+    radius_50kt_km: 175,
+    notes: "Closest approach to central Kyushu; expect high gusts inland.",
+  },
+  {
+    time_iso: "2025-09-26T18:00:00+09:00",
+    lat: 33.0,
+    lon: 131.05,
+    max_wind_kph: 120,
+    central_pressure_hpa: 955,
+    movement_bearing_deg: 0o20,
+    movement_kph: 24,
+    category: "Typhoon (Category 2)",
+    radius_34kt_km: 360,
+    radius_50kt_km: 150,
+    notes: "Tracking northeastwards; inland impacts increasing.",
+  },
+  {
+    time_iso: "2025-09-26T21:00:00+09:00",
+    lat: 33.6,
+    lon: 131.65,
+    max_wind_kph: 95,
+    central_pressure_hpa: 970,
+    movement_bearing_deg: 0o30,
+    movement_kph: 22,
+    category: "Severe Tropical Storm",
+    radius_34kt_km: 340,
+    radius_50kt_km: 110,
+    notes: "Weakening over northern Kyushu/nearby seas.",
+  },
+  {
+    time_iso: "2025-09-27T00:00:00+09:00",
+    lat: 34.2,
+    lon: 132.3,
+    max_wind_kph: 70,
+    central_pressure_hpa: 985,
+    movement_bearing_deg: 0o40,
+    movement_kph: 20,
+    category: "Tropical Storm",
+    radius_34kt_km: 300,
+    radius_50kt_km: 90,
+    notes: "Exiting northeast; heavy rainfall persists.",
+  },
+];
