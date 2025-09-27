@@ -12,6 +12,40 @@ type TyphoonData = {
   notes: string;
 };
 
+type PowerLines = {
+  id: number;
+  name: string;
+  start: [number, number];
+  end: [number, number];
+};
+
+const powerLines: PowerLines[] = [
+  {
+    id: 1,
+    name: "Kitakyushu-Fukuoka Corridor",
+    start: [33.88, 130.87],
+    end: [33.59, 130.4],
+  },
+  {
+    id: 2,
+    name: "Oita Geothermal Link",
+    start: [33.1, 131.22],
+    end: [33.23, 131.6],
+  },
+  {
+    id: 3,
+    name: "Sendai NP-Kagoshima Trunk",
+    start: [31.83, 130.19],
+    end: [31.59, 130.55],
+  },
+  {
+    id: 4,
+    name: "Nagasaki-Saga Link",
+    start: [32.75, 129.87],
+    end: [33.25, 130.3],
+  },
+];
+
 export const typhoonData: TyphoonData[] = [
   {
     time_iso: "2025-09-26T00:00:00+09:00",
