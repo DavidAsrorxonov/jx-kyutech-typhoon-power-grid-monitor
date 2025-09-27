@@ -1,5 +1,6 @@
 import Map from "@/components/Map";
 import Navbar from "@/components/Navbar";
+import TyphoonTracker from "@/components/TyphoonData";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       {/* <div className="px-8 pt-10 w-[700px]">
         <Map />
       </div> */}
+      <TyphoonTracker />
     </div>
   );
 }
